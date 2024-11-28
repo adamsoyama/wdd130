@@ -1,50 +1,93 @@
+/* Define CSS Variables in :root */ 
+:root { 
+    --primary-color: darkblue; 
+    --secondary-color: white; 
+    --accent-color: #61dafb; 
+    --border-color: rgba(0, 0, 0, 0.2); 
+    --box-shadow: 0 0 30px gray; 
+    --max-width-main: 52.5rem; 
+    --aside-width: 20rem; 
+    --aside-bg-color: rgb(238, 238, 238); 
+    --aside-text-color: rgb(51, 51, 51); 
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.5;
+}
+/* Navigation Styles */
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
 }
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+nav a:hover { 
+    background-color: var(--accent-color); 
+    color: var(--primary-color);
+}
+/* Heading Styles */
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
+/* Image Styles */
 img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
+/* Paragraph Styles */
 p{
     padding: 10px;
 }
+/* Main Content Styles */
 main{
-    max-width: 52.5rem;
+    max-width: var(--max-width-main);
+    margin: 0, auto;
 }
+/* Aside Styles */
 aside{
-    width: 20rem;
+    width: var(--aside-width);
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
+    border: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: rgb(238, 238, 238);
-    color: rgb(51, 51, 51);
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
     text-align: center;
+    box-shadow: var(--box-shadow);
 }
 aside img{
     width: 12.5rem;
     height: auto;
 }
+/* Specific iImage Styles in Main */
 main img{
     width: 9.375rem;
     height: auto;
 }
+/* Reset padding fpr Paragraphs in Main */
 p{
     padding: 0;
 }
+/* Footer Styles */
 footer{
     margin-top: 15px;
     border-top: 1px solid rgb(0, 0, 0);
     text-align: center;
+    padding: 10px 0; 
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
 }
