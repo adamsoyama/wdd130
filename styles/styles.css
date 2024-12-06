@@ -1,6 +1,6 @@
 /* Define CSS Variables in :root */ 
 :root { 
-    --primary-color: darkblue; 
+    --primary-color: steelblue; 
     --secondary-color: white; 
     --accent-color: #61dafb; 
     --border-color: rgba(0, 0, 0, 0.2); 
@@ -11,12 +11,14 @@
     --box-text-color: rgb(51, 51, 51); 
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
+
 /* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Global Styles */
 body {
     font-family: var(--font-family);
@@ -24,76 +26,98 @@ body {
     color: #333;
     line-height: 1.5;
 }
+
 /* Navigation Styles */
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 1rem;
     display: flex;
-    justify-content: center; 
-    gap: 10px;
+    justify-content: space-evenly; 
+    align-items: center;
 }
 nav a {
     color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav a:hover { 
     background-color: var(--accent-color); 
     color: var(--primary-color);
 }
+
 /* Heading Styles */
 h1 {
     color: var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
 }
+h1::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; /* Extend the line to the full width of the heading */ 
+    height: 1.5px; /* Increased height for a bold line effect */ 
+    background-color: var(--primary-color); 
+}
+
 /* Image Styles */
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: var(--box-shadow);
 }
+
 /* Paragraph Styles */
-p{
+p {
     padding: 10px;
 }
+
 /* Main Content Styles */
-main{
-    max-width: var(--max-width-main);
+main {
     margin: 0 auto;
 }
+
 /* Aside Styles */
-aside{
+aside {
     width: var(--aside-width);
     text-align: center;
     position: relative;
     box-shadow: var(--box-shadow);
 }
-aside img{
+aside img {
     width: 12.5rem;
     height: auto;
 }
 aside h2 {
     position: absolute;
-    top: 43rem;
-    left: 8.75rem;
+    top: 1rem;
+    left: 8rem;
     color: black;
 }
-/* Specific iImage Styles in Main */
-main img{
+
+/* Specific Image Styles in Main */
+main img {
     width: 10rem;
     height: auto;
     float: right;
     margin-left: 1rem;
 }
-/* Reset padding fpr Paragraphs in Main */
-p{
+
+/* Reset padding for Paragraphs in Main */
+main p {
     padding: 0;
 }
+
 /* Footer Styles */
-footer{
+footer {
     margin-top: 15px;
     border-top: 1px solid rgb(0, 0, 0);
     text-align: center;
@@ -101,6 +125,13 @@ footer{
     background-color: var(--primary-color); 
     color: var(--secondary-color);
 }
+
+/* Correct max-width for header and footer */
+.grid, header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Class Selectors */
 /* ========================== */
 .box {   
@@ -109,4 +140,18 @@ footer{
     padding: 1rem;
     background-color: var(--box-bg-color);
     color: var(--box-text-color);
+}
+.grid {
+   display: grid;
+   align-items: center;
+}
+aside {
+    width:20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
