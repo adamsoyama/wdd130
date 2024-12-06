@@ -127,7 +127,7 @@ footer {
 }
 
 /* Correct max-width for header and footer */
-.grid, header, footer {
+header, footer, .grid {
     max-width: 840px;
     margin: 0 auto;
 }
