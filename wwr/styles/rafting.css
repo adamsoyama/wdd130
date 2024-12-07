@@ -29,19 +29,26 @@ header {
     font-family: var(--font-heading);
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+    width: 80px;
 }
 header nav {
     display: flex; 
     gap: 20px;
+    justify-content: flex-end;
     padding: 10px 50px;
 }
 header nav a {
     color: var(--secondary-color);
     text-decoration: none;
+    font-weight: 500;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 header nav a:hover { 
@@ -96,16 +103,22 @@ header nav a:hover {
 }
 /* Sections */
 section {
-    padding: 40px 20px;
+    padding: 20px;
+    margin:20px 0;
     text-align: center;
 }
 section h2 {
     font-family: var(--font-heading);
     color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 section p {
-    font-size: 1.25rem;
-    margin: 20px 0;
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
 }
 section img { 
     max-width: 100%; 
@@ -113,26 +126,83 @@ section img {
     border-radius: 8px; 
     margin: 10px; 
 }
+.history-content { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
+} 
+.history-content img { 
+    grid-column: 2 / 3; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+.adventure {
+    padding: 20px;
+    margin-top: 40px;
+}
+.adventure h2{
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:15px;
+}
+.adventure-images figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.adventure-images img {
+    width: 100;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.adventure-images img:hover {
+    transform: scale(1.1);
+}
+.adventure-images figcaption {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    color: var(--accent1-color);
+    font-family: var(--font-text);
+    padding: 5px 10px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
 /* Footer Styles */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px 0; 
+    padding: 20px; 
     background-color: var(--primary-color); 
     color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 footer .sociallinks {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 15px;
 }
 footer .sociallinks a{
     text-decoration: none;
 }
 footer .sociallinks a img {
-    width: 30px;
+    width: 25px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 footer .sociallinks a img:hover {
