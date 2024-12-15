@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta name="description" content="HTML & CSS Quiz">
+    <meta name="author" content="Adams Oyama">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Quiz</h1>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <form action="/submit_quiz" method="post">
+                <div class="form-item">
+                    <label for="q1">
+                        <span class="question-number">1.</span> What does HTML stand for?
+                    </label>
+                    <input type="text" id="q1" name="q1" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="q2">
+                        <span class="question-number">2.</span> What property is used to change the background color in CSS?
+                    </label>
+                    <textarea id="q2" name="q2" rows="4" required></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="q3">
+                        <span class="question-number">3.</span> How do you select an element with the id "header" in CSS?
+                    </label>
+                    <select id="q3" name="q3" required>
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="#header">#header</option>
+                        <option value=".header">.header</option>
+                        <option value="header">header</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="q4">
+                        <span class="question-number">4.</span> How many heading levels are there in HTML?
+                    </label>
+                    <input type="number" id="q4" name="q4" required>
+                </div>
+
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©2025 | HTML & CSS Quiz | Adams Oyama</p>
+    </footer>
+</body>
+</html>

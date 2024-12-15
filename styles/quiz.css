@@ -1,0 +1,142 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7f6;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 1rem;
+    color: darkblue;
+    font-size: 2em;
+}
+
+footer p {
+    color: gray;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    background-color: rgb(217, 217, 217);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Item Styles */
+.form-item {
+    display: grid;
+    align-items: start;
+}
+
+label {
+    color: #212020;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.question-number {
+    color: darkblue;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+input, textarea, select, button {
+    font-family: 'Montserrat', serif, Arial;
+}
+
+/* Input, Textarea, Select Styles */
+input,
+textarea,
+select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: darkblue;
+    box-shadow: 0 0 8px rgba(0, 0, 139, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Button Styles */
+button {
+    margin: 1rem 0;
+    padding: 15px;
+    background-color: darkblue;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3);
+}
