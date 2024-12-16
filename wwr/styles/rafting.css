@@ -208,3 +208,136 @@ footer .sociallinks a img {
 footer .sociallinks a img:hover {
     transform: scale(1.1);
 }
+footer a { 
+    color: var(--secondary-color); 
+    text-decoration: none; 
+} 
+footer a:hover { 
+    text-decoration: underline; 
+}
+/* Contact Page Specific Styles */
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Company Info Styles */
+.company-info {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.company-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.company-info p, .company-info ul, .company-info a {
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    color: #333;
+}
+.company-info ul {
+    list-style: none;
+    padding: 0;
+}
+.company-info ul li {
+    margin-bottom: 5px;
+}
+.no-bullets {
+    list-style-type: none;
+}
+.map-container {
+    margin-top: 20px;
+    max-width: 100%;
+}
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Team Section Styles */
+.team {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.team h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.team-member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+.team-member img {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+}
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contact-form h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+.contact-form fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 51, 102, 0.3);
+    outline: none;
+}

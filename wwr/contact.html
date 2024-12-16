@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WaveRush Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Contact us for inquiries, support, or feedback. Our team is ready to assist you.">
+    <meta name="author" content="Adams Oyama">
+</head>
+<body>
+    <header>
+        <img src="images/about/waverush-logo.png" alt="A logo of WaveRush Adventure" width="80">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> Pleasure Park and Resorts, Port-Harcourt Nigeria</p>
+            <p><strong>Phone Numbers:</strong></p>
+            <ul class="no-bullets">
+                <li>+234 813 5780 989</li>
+                <li>+234 816 1771 212</li>
+            </ul>
+            <p><strong>Email:</strong> <a href="mailto:info@waverush.com">info@waverush.com</a></p>
+    
+            <!-- Embedded Google Map -->
+            <h3>Our Location</h3>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3366.3269892937137!2d7.010988028950675!3d4.837374719583019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1734348154940!5m2!1sen!2sng"
+                    width="600"
+                    height="450"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <section class="team">
+            <h2>Our Team</h2>
+            <figure class="team-member">
+                <img src="images/contact/dora.jpg" alt="Employee 1">
+                <figcaption>Dora Leko - Tour Guide</figcaption>
+            </figure>
+            <figure class="team-member">
+                <img src="images/contact/adams.jpg" alt="Employee 2">
+                <figcaption>Adams Oyama - Safety Officer</figcaption>
+            </figure>
+            <figure class="team-member">
+                <img src="images/contact/fordahita.jpg" alt="Employee 3">
+                <figcaption>Fordahita Obaji - Customer Service</figcaption>
+            </figure>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                    
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="website"> Website Suggestion
+                    </label>
+                </fieldset>
+                    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
+                </label>
+                    
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 WaveRush Adventures | All Rights Reserved | Port Harcourt, Nigeria | Designed by Adams Oyama</p>
+        <p><a href="https://app.moqups.com/cQAtlJMewALUh5bu8pSij2rj8HPdMgs7/view/page/ad12de680" target="_blank">View Wireframe</a></p>
+        <nav class="sociallinks">
+            <a href="http://facebook.com">
+                <img src="images/about/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://x.com">
+                <img src="images/about/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/about/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
