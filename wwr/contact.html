@@ -22,6 +22,7 @@
         </nav>
     </header>
     <main>
+        <h1 class="contact">Contact WaveRush Adventures</h1> <!-- Updated the h1 for better clarity -->
         <section id="company-info">
             <h2>Company Information</h2>
             <p><strong>Address:</strong> Pleasure Park and Resorts, Port-Harcourt Nigeria</p>
@@ -70,22 +71,22 @@
                     
                 <fieldset>
                     <legend>Purpose of Message</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="general" required> General Inquiry
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="website"> Website Suggestion
+                    <label for="website">
+                        <input type="radio" id="website" name="purpose" value="website"> Website Suggestion
                     </label>
                 </fieldset>
                     
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                     
-                <label>
-                    <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
                 </label>
                     
                 <button type="submit">Submit Message</button>

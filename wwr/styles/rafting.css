@@ -101,6 +101,7 @@ header nav a:hover {
     padding: 40% 0 0 0;
     color: black;
 }
+
 /* Sections */
 section {
     padding: 20px;
@@ -177,6 +178,7 @@ section img {
     font-size: 1.0rem;
     font-weight: bold;
 }
+
 /* Footer Styles */
 footer {
     padding: 20px; 
@@ -215,13 +217,20 @@ footer a {
 footer a:hover { 
     text-decoration: underline; 
 }
+
 /* Contact Page Specific Styles */
 /* Main Content Styles */
 main {
     flex: 1;
     padding: 20px;
 }
-
+/* Style for Contact heading */
+h1.contact {
+    text-align: center;           /* Centers the text */
+    font-weight: bold;            /* Makes the text bold */
+    color: #003366;               /* Applies dark blue color */
+    font-family: var(--font-heading); /* Uses the specified font for headings */
+}
 /* Company Info Styles */
 .company-info {
     margin-bottom: 40px;
