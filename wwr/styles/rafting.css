@@ -96,7 +96,7 @@ header nav a:hover {
     height: auto;
 }
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-family: var(--font-text);
     padding: 40% 0 0 0;
     color: black;
@@ -349,4 +349,183 @@ figcaption {
     border-color: var(--primary-color);
     box-shadow: 0 0 8px rgba(0, 51, 102, 0.3);
     outline: none;
+}
+/* Newsletter Sign Up Form */
+.newsletter-signup {
+    padding: 20px;
+    text-align: center;
+}
+.newsletter-signup form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.newsletter-signup label {
+    font-weight: bold;
+}
+.newsletter-signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.newsletter-signup button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.newsletter-signup button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/* Call to Action */
+.call-to-action {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+.call-to-action h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.call-to-action .cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+.call-to-action .cta-button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/* Grid Layout Section */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.info-grid .grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.info-grid .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.info-grid .grid-item h3 {
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+.info-grid .grid-item p {
+    font-size: 1rem;
+    color: #666;
+}
+/* Call to Action */
+.call-to-action {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+.call-to-action h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Adding margin to the paragraph */
+}
+.call-to-action .cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adding margin to the button */
+}
+.call-to-action .cta-button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center; /* Centralize h2 */
+}
+.trip-descriptions h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    width: 100%; /* Ensure h2 spans the full width */
+}
+.trip-descriptions .trip {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 0 1 calc(33% - 20px); /* Ensure trips are evenly distributed */
+    margin: 10px;
+}
+.trip-descriptions img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.trip-descriptions h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.trip-descriptions p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Trips Table */
+.trips-table {
+    padding: 20px;
+    text-align: center;
+}
+.trips-table h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.trips-table th, .trips-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.trips-table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.trips-table td {
+    background-color: white;
+    color: #333;
 }
